@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Déjà Vu Restaurant Side | Steakhouse, Turkish Specials & Cocktails</title>
+<meta name="description" content="Déjà Vu Restaurant in Side, Manavgat. Family restaurant and cocktail bar serving European and Turkish specials, steak nights, cocktails and daily specials. Reserve by WhatsApp." />
+<meta property="og:title" content="Déjà Vu Restaurant Side" />
+<meta property="og:description" content="Steakhouse, cocktails, Turkish and European specials in the heart of Side. Reserve your table by WhatsApp." />
+<meta property="og:image" content="assets/steak-night.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#090807;
+  --bg2:#15110d;
+  --gold:#d7a329;
+  --gold2:#ffce55;
+  --cream:#fff4dc;
+  --muted:#c8bda8;
+  --wine:#5a1414;
+  --line:rgba(255,218,133,.22);
+  --glass:rgba(18,14,10,.72);
+  --shadow:0 30px 90px rgba(0,0,0,.55);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--cream);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+body:before{content:"";position:fixed;inset:0;background:radial-gradient(circle at 20% 5%,rgba(215,163,41,.18),transparent 30%),radial-gradient(circle at 90% 10%,rgba(116,16,16,.28),transparent 34%),linear-gradient(180deg,rgba(0,0,0,.38),rgba(0,0,0,.98)),url('assets/logo-pattern.jpg') center/520px repeat;opacity:.23;z-index:-3}
+body:after{content:"";position:fixed;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:56px 56px;mask-image:linear-gradient(to bottom,transparent,black 14%,black 70%,transparent);z-index:-2;pointer-events:none}
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;padding:14px 22px;background:linear-gradient(180deg,rgba(0,0,0,.78),rgba(0,0,0,.18));backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.06)}
+.nav-inner{max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.04em;text-transform:uppercase}
+.brand-mark{width:48px;height:48px;border-radius:999px;border:1px solid var(--line);background:#050505 url('assets/logo-card.jpg') center/cover;box-shadow:0 0 30px rgba(215,163,41,.25)}
+.brand small{display:block;font-size:11px;color:var(--gold);letter-spacing:.22em;margin-top:2px}.nav-links{display:flex;gap:22px;align-items:center;color:#eadfc9;font-size:14px}.nav-links a{opacity:.9}.nav-links a:hover{color:var(--gold2)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:1px solid var(--line);background:linear-gradient(135deg,var(--gold),#8d5c10);color:#120c05;font-weight:900;padding:13px 18px;border-radius:999px;box-shadow:0 15px 35px rgba(215,163,41,.22);cursor:pointer}.btn:hover{transform:translateY(-1px);filter:brightness(1.06)}
+.btn.ghost{background:rgba(255,255,255,.055);color:var(--cream);box-shadow:none}.hero{min-height:100vh;position:relative;display:grid;place-items:center;padding:120px 22px 64px;overflow:hidden}.hero-media{position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.92),rgba(0,0,0,.65),rgba(0,0,0,.25)),url('assets/exterior.jpg') center/cover;z-index:-2}.hero-media:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 78% 32%,rgba(215,163,41,.20),transparent 28%),linear-gradient(180deg,transparent 55%,#090807 100%)}
+.hero-inner{max-width:1180px;width:100%;display:grid;grid-template-columns:1.05fr .95fr;gap:42px;align-items:center}.eyebrow{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--line);background:rgba(0,0,0,.46);border-radius:999px;padding:8px 12px;color:var(--gold2);font-size:12px;font-weight:900;letter-spacing:.16em;text-transform:uppercase}.hero h1{font-family:Cinzel,serif;font-size:clamp(48px,8vw,102px);line-height:.9;margin:22px 0 18px;letter-spacing:.02em;text-shadow:0 18px 50px rgba(0,0,0,.72)}
+.hero h1 span{display:block;color:var(--gold2)}.hero p{font-size:clamp(18px,2vw,23px);line-height:1.55;color:#f0e5d2;max-width:650px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:34px;max-width:650px}.trust div{padding:15px;border:1px solid var(--line);background:rgba(0,0,0,.42);border-radius:18px}.trust b{display:block;color:var(--gold2);font-size:22px}.trust span{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}.hero-card{background:linear-gradient(180deg,rgba(30,22,14,.88),rgba(8,7,6,.86));border:1px solid var(--line);border-radius:34px;box-shadow:var(--shadow);overflow:hidden;transform:rotate(1deg)}.hero-card img{height:390px;width:100%;object-fit:cover}.special-tag{padding:22px}.special-tag h2{font-family:Playfair Display,serif;font-size:34px;margin:0}.special-tag p{font-size:15px;color:var(--muted);margin:8px 0 0}
+.section{padding:92px 22px}.wrap{max-width:1180px;margin:0 auto}.section-head{display:flex;justify-content:space-between;gap:28px;align-items:end;margin-bottom:34px}.kicker{color:var(--gold2);font-size:12px;text-transform:uppercase;letter-spacing:.22em;font-weight:900}.section h2{font-family:Cinzel,serif;font-size:clamp(34px,5vw,60px);line-height:1;margin:8px 0 0}.section-head p{max-width:560px;color:var(--muted);line-height:1.65}.grid{display:grid;gap:18px}.cards{grid-template-columns:repeat(3,1fr)}.card{background:linear-gradient(180deg,rgba(255,255,255,.075),rgba(255,255,255,.025));border:1px solid var(--line);border-radius:28px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.28)}.card img{height:260px;width:100%;object-fit:cover}.card .pad{padding:22px}.card h3{font-family:Playfair Display,serif;font-size:28px;margin:0 0 8px}.card p{margin:0;color:var(--muted);line-height:1.55}.experience{grid-template-columns:1fr 1fr;align-items:center}.photo-stack{display:grid;grid-template-columns:1fr 1fr;gap:14px}.photo-stack img{border-radius:28px;border:1px solid var(--line);height:310px;width:100%;object-fit:cover}.photo-stack img:nth-child(2){margin-top:46px}.copy{background:var(--glass);border:1px solid var(--line);border-radius:34px;padding:34px;box-shadow:var(--shadow)}.copy h2{font-size:52px}.copy p{color:#e8dbc5;line-height:1.75}.list{display:grid;gap:12px;margin:22px 0}.list div{padding:14px 16px;border:1px solid rgba(255,255,255,.08);border-radius:16px;background:rgba(255,255,255,.04);color:#eee0c8}.booking{background:linear-gradient(135deg,rgba(90,20,20,.72),rgba(16,13,10,.90)),url('assets/interior.jpg') center/cover fixed;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.booking-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:28px;align-items:start}.booking-panel{background:rgba(3,3,3,.76);border:1px solid var(--line);border-radius:34px;padding:30px;box-shadow:var(--shadow)}.booking-panel h2{font-size:46px}.form{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:grid;gap:7px}.field.full{grid-column:1/-1}label{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--gold2);font-weight:900}input,select,textarea{width:100%;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.08);color:#fff;border-radius:16px;padding:14px 14px;font:inherit;outline:none}select option{color:#111}textarea{min-height:104px;resize:vertical}input:focus,select:focus,textarea:focus{border-color:var(--gold2);box-shadow:0 0 0 4px rgba(215,163,41,.12)}.form .btn{grid-column:1/-1;width:100%;font-size:16px}.smallnote{color:var(--muted);font-size:13px;line-height:1.55}.social-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.fb-box{border:1px solid var(--line);border-radius:28px;overflow:hidden;background:#fff;min-height:520px}.map{border:0;width:100%;height:520px;border-radius:28px;filter:saturate(.85) contrast(1.05)}.footer{padding:44px 22px;border-top:1px solid var(--line);background:#050403;color:var(--muted)}.footer-inner{max-width:1180px;margin:0 auto;display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}.wa-float{position:fixed;right:20px;bottom:20px;z-index:60;border-radius:999px;padding:15px 18px;background:#25d366;color:#06140a;font-weight:900;box-shadow:0 15px 45px rgba(37,211,102,.35)}
+@media (max-width:900px){.nav-links{display:none}.hero-inner,.booking-grid,.experience,.social-grid{grid-template-columns:1fr}.hero{padding-top:100px}.hero-card{transform:none}.trust{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.section-head{display:block}.form{grid-template-columns:1fr}.copy h2,.booking-panel h2{font-size:36px}.photo-stack img{height:240px}.photo-stack img:nth-child(2){margin-top:0}.hero-card img{height:310px}}
+</style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top"><span class="brand-mark"></span><span>Déjà Vu<small>Restaurant • Side</small></span></a>
+      <div class="nav-links">
+        <a href="#specials">Specials</a><a href="#experience">Experience</a><a href="#reserve">Reserve</a><a href="#updates">Daily posts</a>
+      </div>
+      <a class="btn" href="https://wa.me/905434904407?text=Hi%20Deja%20Vu%2C%20I%27d%20like%20to%20reserve%20a%20table." target="_blank" rel="noopener">WhatsApp booking</a>
+    </div>
+  </nav>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-media"></div>
+      <div class="hero-inner">
+        <div>
+          <span class="eyebrow">Side • Manavgat • Family restaurant & cocktail bar</span>
+          <h1>Déjà Vu <span>Restaurant</span></h1>
+          <p>Steakhouse energy, Turkish hospitality, European favourites and cocktails in one of Side’s most loved dining spots. Come for the special, stay for the atmosphere.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#reserve">Reserve a table</a>
+            <a class="btn ghost" href="tel:+905434904407">Call +90 543 490 44 07</a>
+          </div>
+          <div class="trust">
+            <div><b>98%</b><span>Facebook recommend score</span></div>
+            <div><b>9:30–02:00</b><span>Long service hours</span></div>
+            <div><b>507 Sokak</b><span>Central Side location</span></div>
+          </div>
+        </div>
+        <aside class="hero-card">
+          <img src="assets/steak-night.jpg" alt="Déjà Vu steak night in Side">
+          <div class="special-tag">
+            <h2>Tonight’s table?</h2>
+            <p>Book ahead for steak nights, live music, groups and family dinners. Limited seating during specials.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="specials" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="kicker">House favourites</div><h2>Specials that sell the seat before the waiter arrives.</h2></div>
+          <p>Use Facebook daily posts for the live offer, then keep the website permanently selling the core reason to visit: steak, comfort food, cocktails and the Side holiday atmosphere.</p>
+        </div>
+        <div class="grid cards">
+          <article class="card"><img src="assets/steak-night.jpg" alt="Fillet steak special"><div class="pad"><h3>Steak Night</h3><p>Fillet steak, chips, salad, sauce of choice and tea or coffee. Built for Saturday tradition.</p></div></article>
+          <article class="card"><img src="assets/chicken-milanese.jpg" alt="Chicken Milanese special"><div class="pad"><h3>Italian Classics</h3><p>Crispy chicken, spaghetti Pomodoro, fresh herb salad and a sweet finish.</p></div></article>
+          <article class="card"><img src="assets/menu-logo.jpg" alt="Cocktails at Déjà Vu"><div class="pad"><h3>Cocktail Bar</h3><p>Relaxed holiday cocktails, wine, coffee and late-night drinks in the heart of Side.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="wrap grid experience">
+        <div class="photo-stack">
+          <img src="assets/angel-wall.jpg" alt="Angel wall inside Déjà Vu Restaurant">
+          <img src="assets/interior.jpg" alt="Restaurant interior photo">
+        </div>
+        <div class="copy">
+          <div class="kicker">The experience</div>
+          <h2>Not just dinner. A memory trigger.</h2>
+          <p>Déjà Vu already has the raw ingredients of a powerful restaurant brand: a memorable logo, clear visual identity, daily specials, tourist trust, and a distinctive interior that people photograph.</p>
+          <div class="list">
+            <div>✓ Family restaurant and cocktail bar</div>
+            <div>✓ Turkish and European specials</div>
+            <div>✓ Outdoor seating and central Side location</div>
+            <div>✓ WhatsApp-first reservations for tourists</div>
+          </div>
+          <a class="btn" href="#reserve">Book your table now</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="reserve" class="section booking">
+      <div class="wrap booking-grid">
+        <div class="booking-panel">
+          <div class="kicker">Instant WhatsApp booking</div>
+          <h2>Reserve in under 30 seconds.</h2>
+          <p class="smallnote">This form does not need a backend. It builds a clean WhatsApp message with the guest’s name, party size, date, arrival time and notes, then sends it straight to Déjà Vu’s WhatsApp number.</p>
+          <p><strong>Phone:</strong> <a href="tel:+905434904407">+90 543 490 44 07</a><br><strong>Address:</strong> Selimiye Mahallesi, 507 Sokak No: 13, Side, Manavgat, Turkey</p>
+        </div>
+        <form class="booking-panel form" id="bookingForm">
+          <div class="field"><label>Name</label><input name="name" placeholder="Your name" required></div>
+          <div class="field"><label>People</label><select name="people" required><option value="2 people">2 people</option><option value="3 people">3 people</option><option value="4 people">4 people</option><option value="5 people">5 people</option><option value="6 people">6 people</option><option value="7+ people">7+ people</option></select></div>
+          <div class="field"><label>Date</label><input type="date" name="date" required></div>
+          <div class="field"><label>Arrival time</label><input type="time" name="time" required></div>
+          <div class="field"><label>Phone / WhatsApp</label><input name="guestPhone" placeholder="Your number" inputmode="tel"></div>
+          <div class="field"><label>Occasion</label><select name="occasion"><option>Normal dinner</option><option>Birthday</option><option>Anniversary</option><option>Steak night</option><option>Live music</option><option>Large group</option></select></div>
+          <div class="field full"><label>Notes</label><textarea name="notes" placeholder="Any allergies, high chair, outside table, special request..."></textarea></div>
+          <button class="btn" type="submit">Send reservation on WhatsApp</button>
+          <div class="field full smallnote">No payment is taken online. The message opens WhatsApp for final confirmation.</div>
+        </form>
+      </div>
+    </section>
+
+    <section id="updates" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="kicker">Daily specials</div><h2>Latest Facebook posts can sit here.</h2></div>
+          <p>Below is the Facebook Page Plugin block. Replace the page URL if needed. For a premium version, connect the Facebook Graph API and convert posts into branded website cards.</p>
+        </div>
+        <div class="social-grid">
+          <div class="fb-box">
+            <iframe title="Déjà Vu Facebook feed" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fdejavurestaurantside%2F&tabs=timeline&width=500&height=520&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true" width="100%" height="520" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          </div>
+          <iframe class="map" loading="lazy" allowfullscreen src="https://www.google.com/maps?q=Selimiye%20Mahallesi%20507%20Sokak%20No%2013%20Side%20Manavgat%20Turkey&output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div><strong>Déjà Vu Restaurant • Side</strong><br>Steakhouse • Cocktail Bar • Turkish & European Specials</div>
+      <div><a href="https://www.facebook.com/dejavurestaurantside/" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/dejavusiderestaurant/" target="_blank" rel="noopener">Instagram</a> · <a href="tel:+905434904407">Call</a></div>
+    </div>
+  </footer>
+  <a class="wa-float" href="https://wa.me/905434904407?text=Hi%20Deja%20Vu%2C%20I%27d%20like%20to%20reserve%20a%20table." target="_blank" rel="noopener">WhatsApp</a>
+<script>
+const form=document.getElementById('bookingForm');
+form.addEventListener('submit',function(e){
+  e.preventDefault();
+  const d=Object.fromEntries(new FormData(form).entries());
+  const message=`Hi Deja Vu Restaurant, I would like to reserve a table.%0A%0AName: ${encodeURIComponent(d.name)}%0APeople: ${encodeURIComponent(d.people)}%0ADate: ${encodeURIComponent(d.date)}%0AArrival time: ${encodeURIComponent(d.time)}%0AGuest phone: ${encodeURIComponent(d.guestPhone||'Not provided')}%0AOccasion: ${encodeURIComponent(d.occasion||'Normal dinner')}%0ANotes: ${encodeURIComponent(d.notes||'None')}`;
+  window.open(`https://wa.me/905434904407?text=${message}`,'_blank','noopener');
+});
+</script>
+</body>
+</html>
